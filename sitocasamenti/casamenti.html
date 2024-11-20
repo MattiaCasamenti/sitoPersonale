@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styleHamburger.css">
+	<link rel="stylesheet" href="css/styleArticoli.css">
+	<link rel="stylesheet" href="css/styleEmail.css">
+	<link rel="stylesheet" href="css/styleParallelogramma.css">
+	<link rel="stylesheet" href="css/styleCarosello.css">
+	<link rel="stylesheet" href="css/styleFooter.css">
+	
+    <title>Mattia Casamenti - Autodidatta</title>
+</head> 	
+<body>
+<!-- HAMBURGER MENU -->
+	<div class="hamburger" onclick="toggleMenu()">
+		<div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+	</div>
+	<div id="menu" class="menu">
+		<a href="#">CHI SONO</a>
+		<a href="#">CURRICULUM</a>
+		<a href="#">I MIEI CANALI</a>
+		<a href="#">CONTATTAMI</a>
+		<a href="#">CONOSCIMI MEGLIO</a>
+	</div>
+<!--Logo e scritta-->
+	<div class="intestazione">
+        <img src="Immagini/logo.png" alt="Logo">
+        <h2>Mattia Casamenti</h2>
+    </div>
+<!--Prima schermata-->
+	<div class="contenitore">
+        <p>Ciao a tutti, il mio nome è <b>Mattia</b></p>
+        <h1>Sono un giovane ragazzo <br>motivato a fare esperienze, conoscere persone e mettermi alla prova!</h1>
+        <h2 style="color: red"> --- </h2>
+        <p>Cliccando il bottone qui sotto potrai vedere i modi per contattarmi</p>
+        <button class="pulsante-scrollabile">CONTATTAMI</button>
+    </div>
+    <div class="cerchio"></div>
+<!-- Parallelogramma -->
+    <div class="parallelogram">
+        <div class="part part1" onclick="location.href='Pagine/curriculum.html';">
+            <img src="Immagini/Studio.jpg" alt="Foto 1">
+        </div>
+        <div class="part part2" onclick="location.href='Pagine/chiSono.html';">
+            <img src="Immagini/Passione.jpg" alt="Foto 2">
+        </div>
+        <div class="part part3" onclick="location.href='Pagine/blog.html';">
+            <img src="Immagini/Lavoro.jpg" alt="Foto 3">
+        </div>
+    </div>
+<!-- Seconda schermata con Tabella-->
+	<div class="contenitore">
+		<div class="riquadro">RISULTATI</div>
+		<h1>Non sono solo<br>numeri</h1>
+	</div>
+	<table>
+		<tr>
+			<th>Social</th>
+			<th>Subscriber</th>
+			<th>Link</th>
+		</tr>
+		<tr>
+			<th>Youtube</th>
+			<th>funzione</th>
+			<th>Vai al canale →</th>
+		</tr>
+		<tr>
+			<th>Instagram</th>
+			<th>funzione</th>
+			<th>Vai al canale →</th>
+		</tr>
+		<tr>
+			<th>Site</th>
+			<th>funzione</th>
+			<th>Vai al canale→</th>
+		</tr>
+	</table>	
+	
+<div class="gray-area">
+    <div class="riquadro2">BACHECA</div>
+    <p style="font-size: 60px">Conoscimi meglio</p>
+    <div class="carousel-container">
+        <button class="carousel-arrow left-arrow" onclick="moveLeft()">&#9664;</button>
+        <div class="carousel-track">
+            <div class="rectangle"><a href="#"><img src="image1.jpg" alt="Image 1"></a></div>
+            <div class="rectangle"><a href="#"><img src="image2.jpg" alt="Image 2"></a></div>
+            <div class="rectangle"><a href="#"><img src="image3.jpg" alt="Image 3"></a></div>
+            <div class="rectangle"><a href="#"><img src="image4.jpg" alt="Image 4"></a></div>
+            <div class="rectangle"><a href="#"><img src="image5.jpg" alt="Image 5"></a></div>
+        </div>
+        <button class="carousel-arrow right-arrow" onclick="moveRight()">&#9654;</button>
+    </div>
+</div>
+<!-- Sezione Blog Ampliata -->
+<div class="contenitore-blog">
+    <h2>Dal Mio Blog</h2>
+    <p>Scopri le ultime novità, esperienze e risorse che condivido dai miei progetti e dal mondo dello sviluppo.</p>
+
+    <!-- Campo di ricerca articoli -->
+    <div class="blog-search">
+        <input type="text" placeholder="Cerca articoli..." id="search-bar">
+        <button onclick="searchArticles()">Cerca</button>
+    </div>
+
+    <div class="articoli-grid">
+        <div class="articolo">
+            <img src="Immagini/blog1.jpg" alt="Articolo 1">
+            <h3>Come ho iniziato il mio percorso nella programmazione</h3>
+            <p>Una panoramica su come ho mosso i primi passi nel mondo del codice e le sfide che ho affrontato.</p>
+            <a href="#" class="pulsante-articolo">Leggi di più</a>
+        </div>
+        <div class="articolo">
+            <img src="Immagini/blog2.jpg" alt="Articolo 2">
+            <h3>I vantaggi dell'autodidattica</h3>
+            <p>Parlo dei benefici e delle difficoltà di imparare da soli e come questo mi ha aiutato a crescere.</p>
+            <a href="#" class="pulsante-articolo">Leggi di più</a>
+        </div>
+        <div class="articolo">
+            <img src="Immagini/blog3.jpg" alt="Articolo 3">
+            <h3>Le migliori risorse per imparare a programmare</h3>
+            <p>In questo articolo condivido alcune delle risorse che ho trovato più utili nel mio percorso di apprendimento.</p>
+            <a href="#" class="pulsante-articolo">Leggi di più</a>
+        </div>
+    </div>
+
+		<!-- Pulsante per visualizzare più articoli -->
+    <div class="blog-more">
+        <button onclick="loadMoreArticles()">Carica Altri Articoli</button>
+    </div>
+	</div>
+<!-- MAIL/SECONDA AREA PARALLASSE -->
+<!-- Sezione con effetto parallasse -->
+<div class="parallax-section">
+    <h1>Vuoi parlare subito con<br />me?</h1>
+    <div class="contact-options">
+        <p>Se sei un'azienda o un libero professionista e desideri scambiare qualche parola con me</p>
+        <p class="email-option">Scrivimi una Mail <span class="arrow" onclick="showEmailForm()">&#8594;</span></p>
+    </div>
+
+    <!-- Questo è il form nascosto inizialmente, verrà mostrato cliccando sulla freccia -->
+    <form id="email-form" class="hidden-email-form" action="mailto:mattiacasamenti666@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Il tuo nome" required>
+        <input type="email" name="email" placeholder="La tua email" required>
+        <textarea name="message" placeholder="Scrivi il tuo messaggio qui..." required></textarea>
+        <button type="submit">Invia</button>
+    </form>
+</div>
+<div class="footer">
+    <!-- Link "Home" e "Chi Siamo" -->
+    <div class="company-info">
+        <a href="#home" class="page-link">Home</a>
+        <a href="chi-sono.html" class="page-link">Chi Sono</a>
+        <p style="font-size: 17px">SRL Mattia.com</p>
+        <p style="font-size: 17px">Email commerciale: mattiacasamenti666@gmail.com</p>
+    </div>
+
+    <!-- Icone Social in basso a destra -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="Immagini/facebook.png" alt="Facebook"></a>
+        <a href="https://youtube.com" target="_blank"><img src="Immagini/youtube.png" alt="YouTube"></a>
+        <a href="https://instagram.com" target="_blank"><img src="Immagini/instagram.png" alt="Instagram"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="Immagini/linkedin.png" alt="LinkedIn"></a>
+    </div>
+</div>
+<!-- Funzioni-->
+    <script>
+	<!-- Hamburger Menu-->
+		function toggleMenu() {
+		var menu = document.getElementById("menu");
+		var hamburger = document.querySelector('.hamburger');
+		menu.classList.toggle("active");
+		hamburger.classList.toggle("active"); // Cambia anche l'icona
+		}
+    <!-- Scroll scomparsa parallelogramma-->
+		window.addEventListener('scroll', function() {
+            const parallelogram = document.querySelector('.parallelogram');
+            const parts = document.querySelectorAll('.part');
+            const windowHeight = window.innerHeight;
+            const parallelogramPosition = parallelogram.getBoundingClientRect().top;
+
+            if (parallelogramPosition < windowHeight) {
+                parallelogram.classList.add('visible');
+                parts.forEach(part => part.classList.add('visible'));
+            }
+        });
+
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+		// VETRINA IMMAGINI
+		let currentIndex = 1;  // Partiamo dal secondo elemento (che è il primo rettangolo effettivo)
+const rectangles = document.querySelectorAll('.rectangle');
+const totalItems = rectangles.length;
+const track = document.querySelector('.carousel-track');
+
+// Cloniamo il primo e l'ultimo elemento per creare l'effetto rotatorio
+const firstClone = rectangles[0].cloneNode(true);
+const lastClone = rectangles[totalItems - 1].cloneNode(true);
+track.appendChild(firstClone);
+track.insertBefore(lastClone, rectangles[0]);
+
+// Posizioniamo il carosello sul primo rettangolo reale
+track.style.transform = `translateX(-${(350 + 20)}px)`;  // 350px è la larghezza del rettangolo, 20px il margine
+
+function moveLeft() {
+    if (currentIndex <= 0) return; // Evitiamo di andare fuori dai limiti
+    currentIndex--;
+    updateCarousel();
+}
+
+function moveRight() {
+    if (currentIndex >= totalItems + 1) return; // Evitiamo di andare oltre i limiti
+    currentIndex++;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const offset = -(currentIndex * (350 + 20));  // Calcoliamo la traslazione basata su rettangolo e margine
+    track.style.transition = 'transform 0.5s ease-in-out';  // Aggiungiamo transizione per effetto fluido
+    track.style.transform = `translateX(${offset}px)`;  // Applichiamo lo spostamento
+
+    track.addEventListener('transitionend', handleBoundary, { once: true });
+}
+
+function handleBoundary() {
+    // Se siamo al clone dell'ultimo rettangolo (a sinistra), spostiamoci all'ultimo elemento reale
+    if (currentIndex === 0) {
+        track.style.transition = 'none';  // Rimuoviamo temporaneamente la transizione
+        currentIndex = totalItems;  // Posizioniamo sul rettangolo reale in fondo
+        const offset = -(currentIndex * (350 + 20));  // Calcoliamo la traslazione
+        track.style.transform = `translateX(${offset}px)`;
+    }
+    // Se siamo al clone del primo rettangolo (a destra), spostiamoci al primo elemento reale
+    else if (currentIndex === totalItems + 1) {
+        track.style.transition = 'none';  // Rimuoviamo temporaneamente la transizione
+        currentIndex = 1;  // Primo rettangolo reale
+        const offset = -(currentIndex * (350 + 20));
+        track.style.transform = `translateX(${offset}px)`;
+    }
+}
+// ARTICOLI
+	function searchArticles() {
+        const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+        const articles = document.querySelectorAll('.articolo');
+
+        articles.forEach(article => {
+            const title = article.querySelector('h3').textContent.toLowerCase();
+            const description = article.querySelector('p').textContent.toLowerCase();
+
+            // Mostra o nasconde articoli in base alla ricerca
+            if (title.includes(searchQuery) || description.includes(searchQuery)) {
+                article.style.display = 'block';
+            } else {
+                article.style.display = 'none';
+            }
+        });
+    }
+
+    // Simula il caricamento di altri articoli
+    function loadMoreArticles() {
+        const articoliGrid = document.querySelector('.articoli-grid');
+
+        // Simula nuovi articoli caricati
+        const newArticles = `
+        <div class="articolo">
+            <img src="Immagini/blog4.jpg" alt="Articolo 4">
+            <h3>Guida rapida a JavaScript per principianti</h3>
+            <p>Un'introduzione ai concetti fondamentali di JavaScript per chi è agli inizi.</p>
+            <a href="#" class="pulsante-articolo">Leggi di più</a>
+        </div>
+        <div class="articolo">
+            <img src="Immagini/blog5.jpg" alt="Articolo 5">
+            <h3>Frameworks Frontend: quale scegliere?</h3>
+            <p>Un confronto tra i principali framework frontend: React, Angular e Vue.js.</p>
+            <a href="#" class="pulsante-articolo">Leggi di più</a>
+        </div>`;
+
+        // Aggiungi nuovi articoli al layout
+        articoliGrid.innerHTML += newArticles;
+    }
+	function showEmailForm() {
+		const emailForm = document.getElementById('email-form');
+		emailForm.style.display = 'block';
+	}
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    </script>
+</body>
+</html>

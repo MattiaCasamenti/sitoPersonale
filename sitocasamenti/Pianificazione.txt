@@ -1,0 +1,24 @@
+1)Obiettivi---------------------------------------------
+	- Essere professionale
+	- Facile da Usare(user friendle)
+	- Avere i Link ai Social Pubblicizzarmi
+Fine
+	- Portfolio personale
+	- Blog affiliato
+Competitor
+	- Riccardo Zanetti
+	- 
+Audience
+	- Giovani appassionati di Bandiere
+Budget
+	- Nullo
+2) Sviluppo-----------------------------------------------------
+	- Personalizzato HTML-CSS-Javascript
+3) Registrazione Dominio e Hosting------------------------------
+	- Scegliere dominio
+	- servizio di Hosting
+4) Design del sito-----------------------------------------------
+	- progetto layout sito wireframe
+	- crea Mockup con Figma, Adobe XD o Sketch.
+	- Design per tutti i dispositivi (mobile first)
+	- Design deve rispettare l'Identità del logo

@@ -1,0 +1,114 @@
+/* Container della galleria */
+.contenitore-blog {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #333;
+}
+
+.contenitore-blog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contenitore-blog p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Campo di ricerca */
+.blog-search {
+    margin-bottom: 30px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blog-search button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-search button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid per gli articoli */
+.articoli-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.articolo {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.articolo:hover {
+    transform: translateY(-5px);
+}
+
+.articolo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.articolo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.articolo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.pulsante-articolo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.pulsante-articolo:hover {
+    background-color: #0056b3;
+}
+
+/* Stili per il bottone "Carica Altri Articoli" */
+.blog-more {
+    margin-top: 40px;
+}
+
+.blog-more button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.blog-more button:hover {
+    background-color: #218838;
+}

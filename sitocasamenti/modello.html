@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Preparazione -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link al file CSS esterno -->
+    <!-- Sito-->
+    <title>Mattia Casamenti - Autodidatta</title>
+    <style>
+        /* Stili per il cerchio */
+        .cerchio {
+            width: 100px; /* Larghezza del cerchio */
+            height: 100px; /* Altezza del cerchio */
+            background-color: #3498db; /* Colore del cerchio */
+            border-radius: 50%; /* Rende il div un cerchio */
+            margin: 20px auto; /* Centra il cerchio */
+        }
+
+        /* Stili per il parallelogramma */
+        .parallelogram {
+            width: 300px; /* Larghezza totale */
+            height: 200px; /* Altezza totale */
+            background-color: lightblue;
+            position: relative;
+            overflow: hidden;
+            transform: skew(-20deg); /* Angolo di inclinazione */
+            margin: 20px auto; /* Centra il parallelogramma */
+        }
+
+        .part {
+            height: 100%;
+            width: 33.33%;
+            position: absolute;
+            top: 0;
+            cursor: pointer; /* Cambia il cursore quando si passa sopra */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .part img {
+            width: 80%; /* Dimensione dell'immagine */
+            border-radius: 10px; /* Angoli arrotondati */
+        }
+
+        .part:hover {
+            transform: scale(1.05); /* Effetto hover */
+        }
+
+        .part1 {
+            left: 0;
+            background-color: rgba(255, 0, 0, 0.7); /* Rosso traslucido */
+        }
+
+        .part2 {
+            left: 33.33%;
+            background-color: rgba(0, 255, 0, 0.7); /* Verde traslucido */
+        }
+
+        .part3 {
+            left: 66.66%;
+            background-color: rgba(0, 0, 255, 0.7); /* Blu traslucido */
+        }
+    </style>
+</head>
+<body>
+    <div class="intestazione">
+        <img src="Immagini/logo.png" alt="Logo">
+        <h2>Mattia Casamenti</h2>
+    </div>
+    <div class="contenitore">
+        <p>Ciao a tutti, il mio nome è <b>Mattia</b></p> 
+        <h1>Sono un giovane ragazzo <br>motivato a fare esperienze, conoscere persone e mettermi alla prova!</h1>
+        <h2 style="color: red"> --- </h2> <!-- Corretto "style" -->
+        <p>Cliccando il bottone qui sotto potrai vedere i modi per contattarmi</p>
+        <button class="pulsante-scrollabile">CONTATTAMI</button>
+    </div>
+
+    <!-- Elementi Aggiuntivi-->
+    <div class="cerchio"></div>
+
+    <!-- Parallelogramma Diviso -->
+    <div class="parallelogram">
+        <div class="part part1" onclick="location.href='link1.html';">
+            <img src="foto1.jpg" alt="Foto 1">
+        </div>
+        <div class="part part2" onclick="location.href='link2.html';">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="part part3" onclick="location.href='link3.html';">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+    </div>
+
+    <div class="rettangolo-nero"></div>
+    <script>
+        // Attendi il caricamento completo della pagina e poi applica la classe "loaded"
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
